@@ -35,3 +35,19 @@ intro.call(user);
 intro.call(user2);
 intro.call(user3);
 intro.call(user4);
+
+
+//    Bind 
+// function ko foran execute krta ha new function return krta ha is me this 
+// permenanatly bind hojata ha 
+ function message(Name){
+    console.log(`Welcome to ${this.Name}`);
+ }
+
+ let Org = {
+    Name : "abc Organization",
+    id:782378
+ }
+
+  let newFunction = message.bind(Org);
+  newFunction();
