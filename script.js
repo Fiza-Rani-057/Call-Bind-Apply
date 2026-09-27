@@ -37,7 +37,7 @@ intro.call(user3);
 intro.call(user4);
 
 
-//    Bind 
+//  =====================  Bind ================ 
 // function ko foran execute krta ha new function return krta ha is me this 
 // permenanatly bind hojata ha 
  function message(Name){
@@ -46,8 +46,17 @@ intro.call(user4);
 
  let Org = {
     Name : "abc Organization",
-    id:782378
  }
 
   let newFunction = message.bind(Org);
   newFunction();
+
+  let School ={
+    Name: "abc school"
+  }
+
+  let newFun = message.bind(School);
+  newFun();
+
+
+//  ===================  Apply ====================
